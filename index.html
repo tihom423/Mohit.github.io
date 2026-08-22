@@ -90,21 +90,7 @@
         <label for="remember-me">Remember Me</label>
       </div>
 
-      <!-- The Overlay Wrapper -->
-<div id="modal-overlay">
-  <div class="modal-content">
-    <h2>What's your purpose of visit?</h2>
-    
-    <!-- Web3Forms Integration -->
-    <form id="purpose-form" action="https://api.web3forms.com/submit" method="POST">
-      <input type="hidden" name="access_key" value="9a902511-bd3d-40d4-adce-a312d032e32f">
-      <input type="text" name="purpose" id="purpose-input" placeholder="Enter your purpose..." required>
-      
-      <div class="checkbox-container">
-        <input type="checkbox" name="remember" id="remember-me" />
-        <label for="remember-me">Remember Me</label>
-      </div>
-      
+         
       <button type="submit" id="submit-purpose">Submit</button>
     </form>
   </div>
@@ -129,6 +115,21 @@
   <footer>
     &copy; <span id="currentYear"></span> MOHIT CHAND
   </footer>
+
+ <!-- The Overlay Wrapper -->
+<div id="modal-overlay">
+  <div class="modal-content">
+    <h2>What's your purpose of visit?</h2>
+    
+    <!-- Web3Forms Integration -->
+    <form id="purpose-form" action="https://api.web3forms.com/submit" method="POST">
+      <input type="hidden" name="access_key" value="9a902511-bd3d-40d4-adce-a312d032e32f">
+      <input type="text" name="purpose" id="purpose-input" placeholder="Enter your purpose..." required>
+      
+      <div class="checkbox-container">
+        <input type="checkbox" name="remember" id="remember-me" />
+        <label for="remember-me">Remember Me</label>
+      </div>
 
   <script>
   // 1. Check if the user has already submitted the form in the past
