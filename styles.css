@@ -410,7 +410,29 @@ footer a:hover {
 
 }
 
-.modal, .modal-content {
-    position: relative; 
-    z-index: 9999 !important; 
+/* This locks the page AND disables all clicks on the background */
+body.locked {
+    overflow: hidden;
+    pointer-events: none; /* This is the magic rule that blocks clicks! */
+}
+
+/* Make sure the overlay allows clicks and sits in front of EVERYTHING */
+#modal-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(5px);
+    
+    /* Forces the overlay to the absolute front */
+    z-index: 999999 !important; 
+    
+    /* Re-enables clicks ONLY for the popup form */
+    pointer-events: auto !important; 
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
