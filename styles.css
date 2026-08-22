@@ -38,7 +38,7 @@ header {
 }
 
 h1, nav {
-  position: relative; /* Stack above the canvas */
+  position: fixed; /* Stack above the canvas */
   z-index: 1; /* Above the canvas */
 }
 
